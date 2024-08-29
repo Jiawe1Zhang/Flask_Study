@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <title>Moban_study</title>
+</head>
+
+
+<body>
+<form action="/moban" method="post">
+    hello world
+    <br>
+    {{ data }}
+    <br>
+    {{ data['name']}}
+    <br>
+    {{[ data.name ]}}
+    <br>
+    mylist列表:{{ data.mylist | woc }}
+    <br>
+    mylist:{{data.mylist[1]}}
+    <br>
+    count:{{data.mylist[1]+data.mylist[2]}}
+    <br>
+    {{ "nimasile" | upper }}
+    <br>
+    {{ "hello_world | title "}}
+</form>
+</body>
+
+
+
+</html>
